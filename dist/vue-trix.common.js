@@ -1642,21 +1642,7 @@ const __exports__ = /*#__PURE__*/exportHelper_default()(VueTrixvue_type_script_l
  * Github: https://github.com/hanhdt/vue-trix
  */
 
-var VueTrixPlugin = {
-  install: function install(app, options) {
-    if (!options) {
-      options = {};
-    }
-
-    app.config.compilerOptions.isCustomElement = function (tag) {
-      return tag === 'trix-editor';
-    };
-
-    app.config.ignoredElements = ['trix-editor'];
-    app.component('vue-trix', VueTrix);
-  }
-};
-/* harmony default export */ var src_0 = (VueTrixPlugin);
+/* harmony default export */ var src_0 = (VueTrix);
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 

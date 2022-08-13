@@ -6,16 +6,4 @@
 
 import VueTrix from './components/VueTrix.vue'
 
-const VueTrixPlugin = {
-  install (app, options) {
-    if (!options) {
-      options = {};
-    }
-    app.config.compilerOptions.isCustomElement = tag => tag === 'trix-editor'
-    app.config.ignoredElements = ['trix-editor']
-
-    app.component('vue-trix', VueTrix);
-  }
-};
-
-export default VueTrixPlugin;
+export default VueTrix;
